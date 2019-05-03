@@ -1,0 +1,15 @@
+/*!
+ * Path pattern: /issues/(\d+|new|copy)$
+ * Insertion position: Bottom of issue form (チケット入力欄の下)
+ * Type: CSS
+ *
+ * @brief   ウォッチャー追加時に検索するとチェックが外れる対策
+ */
+#users_for_watcher_buffer {
+  max-height: 200px;
+  overflow: auto;
+}
+
+#users_for_watcher_buffer label {
+  display: block;
+}

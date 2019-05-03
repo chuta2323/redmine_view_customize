@@ -1,0 +1,16 @@
+/*!
+ * Path pattern: /issues$
+ * Insertion position: Head of all pages (全てページのヘッダ)
+ * Type: StyleSheet
+ *
+ * @brief   チケット一覧を識別しやすいように装飾
+ */
+/* 自分が担当のチケットは太字 */
+tr.issue.assigned-to-me {
+  font-weight: bold;
+}
+
+/* 題名は折り返さない */
+tr.issue td.subject {
+  white-space: nowrap;
+}
