@@ -1,0 +1,31 @@
+/*!
+ * Path pattern: /calendar
+ * Insertion position: Head of all pages (全てページのヘッダ)
+ * Type: StyleSheet
+ *
+ * @brief   祝日・土日の表示を調整
+ */
+/* 土曜日の文字色 */
+table.cal th:nth-last-child(2),
+table.cal td:nth-last-child(2):not(.odd) p.day-num {
+  color: blue;
+}
+
+/* 日曜、祝日の文字色*/
+table.cal th:last-child,
+table.cal td:last-child:not(.odd) p.day-num,
+table.cal td.holiday p.day-num {
+  color: red;
+}
+
+/* 祝日、土日の背景色 */
+table.cal td:last-child,
+table.cal td:nth-last-child(2),
+table.cal td.holiday {
+  background-color: #f6f7f8;
+}
+
+/* 前月の日付、翌月の日付のtdの背景色 */
+table.cal td.odd {
+  background-color: #efefef;
+}
