@@ -1,0 +1,23 @@
+/*!
+ * Path pattern: .*
+ * Insertion position: Head of all pages (全てページのヘッダ)
+ * Type: StyleSheet
+ *
+ * @brief   カレンダーポップアップ(jQuery ui Datepicker)対応
+ */
+.ui-datepicker-calendar th:last-child span {
+  color: red;
+}
+
+.ui-datepicker-calendar th:nth-last-child(2) span {
+  color: blue;
+}
+
+.ui-datepicker-calendar td:last-child a,
+.ui-datepicker-calendar td.holiday a {
+  color: red;
+}
+
+.ui-datepicker-calendar td:nth-last-child(2) a {
+  color: blue;
+}
